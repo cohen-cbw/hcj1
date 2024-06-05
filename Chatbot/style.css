@@ -53,3 +53,6 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+.hb{
+    flex-shrink: 0;
+}
