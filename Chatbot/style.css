@@ -1,0 +1,44 @@
+:root{
+    --non-photo-blue: #b0eeffff;
+    --light-cyan: #ccf4ffff;
+    --non-photo-blue-2: #93e7ffff;
+    --vivid-sky-blue: #3ed4feff;
+    --light-cyan-2: #c8f3ffff;
+    --aero: #1bbbe8ff;
+--zaffre: #3626a7ff;
+}
+
+
+body{
+    background-image: url(../Chatbot/Pictures/MainPage/HI_bot.png);
+    background-repeat: no-repeat;
+    background-size: fill;
+    display: flex;
+    background-size: cover;
+}
+@font-face{
+    font-family: 'Hexagon';
+    src: url('../Chatbot/Fonts/hexgon-font/Hexgon-2xwv.otf');
+}
+
+.titel{
+    font-family: 'Hexagon';
+    font-size: 30px;
+}
+
+@font-face {
+    font-family: 'Robot';
+    src: url('../Chatbot/Fonts/robot_2/Robot_Font.otf');
+}
+.text{
+    font-family: 'Robot';
+    font-size: 20px;
+}
+
+.label_und_eingabefeld{
+    display: flex;
+    flex-direction: column;
+}
+.parent_container{
+    display: flex;
+}

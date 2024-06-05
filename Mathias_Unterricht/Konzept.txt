@@ -1,0 +1,3 @@
+Ein "Chatbot" (Schiggy) der User eingaben nimmt, 
+sie an  einen chatbot wie https://talkai.info/ und 
+dessen antworten als output an den User weiter gibt.
