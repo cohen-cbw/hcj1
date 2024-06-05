@@ -5,14 +5,13 @@
     --vivid-sky-blue: #3ed4feff;
     --light-cyan-2: #c8f3ffff;
     --aero: #1bbbe8ff;
---zaffre: #3626a7ff;
+    --zaffre: #3626a7ff;
 }
 
 
 body{
     background-image: url(../Chatbot/Pictures/MainPage/HI_bot.png);
     background-repeat: no-repeat;
-    background-size: fill;
     display: flex;
     background-size: cover;
 }
