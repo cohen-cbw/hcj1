@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html> <!-- Wurzel-Element (root) -->
+    <head> <!-- Öffnendes Tag -->
+        <!-- Im "Head" sind alle Meta-Daten zu einer Seite -->
+        <!-- Titel, Autor, Schlüsselworte, Beschreibung, Kodierung, externe Dateien zum Einbinden, z.B. CSS-Dateien, JavaScript-Dateien, favicon, ... -->
+
+        <title>HCJ1</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="EM24, Fußball, DFB">
+        <!-- name= bezeichnet man auch als Attribut -->
+        <meta name="description" content="Überblick zur Europameisterschaft">
+        <meta name="autor" content="HAM-BER-FRA-FAG41">
+        <!-- href-Attribut ist ein Verweis auf eine Datei -->
+        <link rel="icon" type="image/svg+xml" href="">
+
+    </head> <!-- Schliessendes Tag -->
+
+    <body>
+        <center><b>Hallo</b> <strong>Kurs</strong></center>
+        <br>
+        <h1>Überschrift h1</h1>
+        <h2>Überschrift h2</h2>
+        <h3>Überschrift h3</h3>
+        <h4>Überschrift h4</h4>
+        <h5>Überschrift h5</h5>
+        <h6>Überschrift h6</h6>
+        <hr>
+        <span style="color: rgb(2, 110, 2);">&lt;!-- Kommentar --&gt;</span>
+        <!-- HTML: Struktur und Inhalt einer Website -->
+        <span style="color: rgb(2, 110, 2);"><br>
+        &lt;!--
+        <p>
+            CSS: Formatierung und das Design von Webeiten ermöglicht es,
+            zusätzliche Eigenschaften für die Strukturelemente zu vergeben.
+        </p>
+        <p>
+            Zum Beispiel: Farben, Größe, Abstandsformatierungen, Schriftarten,
+            Ränder, Elemente für responsives Webdesign, u.v.m.
+        </p>
+        --&gt;
+        </span>
+
+        <!-- JS: Ermöglicht die Implementierung einer "dynamischen" Website.
+            "Logik" einer Website: Beispiel Produktliste => Detailansicht
+            Nachladen ohne Verzögerung / Anfrage an den Server
+            JavaScript ist eine Programmiersprache,
+            die auf dem CLient im Browser ausgeführt wird. Laufzeitumgeung ist der Browser 
+        -->
+
+        <!-- REACT ist eine JavaScript-Programmbibliothek. -->
+
+        <!-- PHP (rekursives Akronym und Backronym für „PHP: Hypertext Preprocessor“
+            .php
+            REST: Representational State Transfer (abgekürzt REST) ist ein Paradigma
+            für die Softwarearchitektur von verteilten Systemen, insbesondere für Webservices.
+            PHP: Serverseitige Programmiersprache, verarbeitet Daten auf dem Server.
+            Ausführung von Dateien mit der .php Endung.
+            Nutzen als RESTful API, Verarbeitung von Formulardaten, etc
+        -->
+
+        <!-- Git(hub)
+            TortoiseGit ist eine freie grafische Benutzeroberfläche für die Versionsverwaltungs-Software Git unter Windows.
+            COMMIT: Erstmal NUR lokal den Stand speichern
+            COMMIT & PUSH: Änderungen sowohl lokal, als auch auf dem Server speichern
+        -->
+
+        <!-- SVG vs. PNG?
+            SVG speichert Koordinaten
+            PNG hat eine Auflösung und speichert "pro Pixel" (komprimiert)
+            SVG ist eine Anleitung, wie zeichne ich das Bild? 
+            SVG UNABHÄNGIG von der Auflösung 
+        -->
+
+    </body>
+</html>
