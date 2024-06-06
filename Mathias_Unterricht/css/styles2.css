@@ -1,0 +1,27 @@
+:root{
+    --non-photo-blue: #b0eeffff;
+    --light-cyan: #ccf4ffff;
+    --non-photo-blue-2: #93e7ffff;
+    --vivid-sky-blue: #3ed4feff;
+    --light-cyan-2: #c8f3ffff;
+    --aero: #1bbbe8ff;
+    --zaffre: #3626a7ff;
+}
+
+p{
+    font-size: 15px;
+    color: var(--light-cyan);
+    font-family: 'Open Sans', sans-serif;
+}
+h1{
+    color: var(--non-photo-blue);
+}
+
+body{
+    background-color: var(--zaffre);
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+article{font-family: Verdana, Geneva, Tahoma, sans-serif ;}
