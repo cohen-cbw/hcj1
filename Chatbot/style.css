@@ -7,8 +7,6 @@
     --aero: #1bbbe8ff;
     --zaffre: #3626a7ff;
 }
-
-
 body{
     background-image: url(../Chatbot/Pictures/MainPage/HI_bot.png);
     background-repeat: no-repeat;
@@ -18,7 +16,6 @@ body{
     font-family: 'Hexagon';
     src: url('../Chatbot/Fonts/hexgon-font/Hexgon-2xwv.otf');
 }
-
 .titel{
     font-family: 'Hexagon';
     font-size: 30px;
@@ -27,7 +24,6 @@ body{
     justify-content: center;
     margin: 10px;
 }
-
 @font-face {
     font-family: 'Robot';
     src: url('../Chatbot/Fonts/robot_2/Robot_Font.otf');
@@ -37,7 +33,6 @@ body{
     font-size: 20px;
     margin: 5px;
 }
-
 .label_und_eingabefeld{
     display: flex;
     flex-direction: column;
@@ -55,4 +50,35 @@ body{
 }
 .hb{
     flex-shrink: 0;
+}
+div  {
+    display: block;
+    unicode-bidi: isolate
+}
+#chat_inhalt{
+    background-image: url(../Chatbot/Pictures/chatbox/background.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.text_blase {
+    position: relative;
+    background: #7b35de;
+    color: #FFFFFF;
+    font-family: vintage;
+    font-size: 20px;
+    text-align: left;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-right: 70%;
+    margin-left: 3%;
+    margin-bottom: 5px;;
+}
+@font-face {
+    font-family: 'vintage';
+    src: url('../Chatbot/Fonts/vintage/Vintage.otf');
 }

@@ -1,8 +1,13 @@
 document.getElementById("send").addEventListener("click", senden);
-let eingabe
 
 function senden() {
-    eingabe = document.getElementById("Chat").value;
-    document.getElementById("Chat").value += "\nIm Moment kann ich dir noch keine antworten geben. \n";
-    console.log(eingabe);
+    var nachricht = document.getElementById("eingabe_feld").value
+    var text_blase = document.createElement("div");
+    text_blase.textContent = nachricht
+    text_blase.classList.add("text_blase");
+    document.getElementById("chat_inhalt").append(text_blase);
+    document.getElementById("eingabe_feld").value = "";
+
+
+    
 }
