@@ -1,0 +1,22 @@
+
+th {
+    background-color: lightgray;
+}
+table {
+    width: 500px;
+}
+table, th, td {
+    border: 1px solid #000;
+    /* Umrandungen zusammenfassen */ 
+    border-collapse: collapse;
+}
+td {
+    text-align: center;
+}
+@font-face {
+    font-family: Sunflower;
+    src: url(..\hcj1\Chatbot\Fonts\sunflower-font\Sunflower-lgZye.otf);
+}
+body{
+    font-family: Sunflower;
+}

@@ -1,0 +1,423 @@
+
+<!DOCTYPE HTML>
+<html>
+    <!-- head, HTML-Tag -->
+    <!-- öffnendes Tag -->
+    <head>
+        <!-- Alle "Meta-Daten" zu einer Seite -->
+        <!-- Titel, Autor, Schlüsselworte, Beschreibung, Kodierung,
+        externe Dateien zum Einbinden, z.B. 
+        CSS-Dateien, JavaScript-Dateien, favicon, ...  -->
+        <!-- name= bezeichnet man auch als Attribut -->
+        <title>Deutschland fiebert der Fußball-EM entgegen</title>
+        <meta name="keywords" content="EM24, Fußball, DFB, Deutschland, England">
+        <meta name="description" content="Überblick zur Fußball-Europmaeisterschaft Inhalt
+        Deutschland. ">
+        <meta name="author" content="HAM-BER-FRA-FAG41">
+        <meta charset="UTF-8"> 
+        <link rel="icon" href="https://uxwing.com/wp-content/themes/uxwing/download/hand-gestures/good-icon.png">
+
+        <link rel="stylesheet" type="text/css" href="css/styles.css">   
+       
+        <!-- Kurzform: style-->
+        <style>
+            th {
+                background-color: lightgray;
+            }
+            table {
+                width: 500px;
+            }
+            table, th, td {
+                border: 1px solid #000;
+                /* Umrandungen zusammenfassen */ 
+                border-collapse: collapse;
+            }
+            td {
+                text-align: center;
+            }
+            /* Diese Definitionen sind für colgroups */
+            .price {
+                background-color: goldenrod;
+            }
+            .normal {
+                background-color: aqua;
+            }
+            .footer {
+                background-color: lightgray;
+            }
+
+            .country {
+                width: 150px;
+            }
+            .other {
+                width: 100px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <nav id="oben">
+            <a href="#Ticketpreise">Zu den Ticketpreisen</a>
+        </nav>
+        <!-- Eine Tabelle erstellen -->
+         <h3>Eine einfache Tabelle erstellen </h3>
+         
+         <table>
+            <!-- Drei Zeilen erstellen -->
+             <!-- erste Dimension -->
+             <tr>
+                <!-- Spalten definieren -->
+                <!-- zweite Dimension -->
+                <!-- Erster EM Spieltag: 
+                 Land 1, Land 2, Datum/Uhrzeit, Ergebnis -->
+                 <!-- 4 Spalten -->
+                 <!-- th, weil ERSTE Zeile -->
+                <th class="country">Heim </th>
+                <th class="country">Gast </th>
+                <th class="other">Datum/Uhrzeit </th>
+                <th class="other">Ergebnis </th>
+             </tr>
+             <tr>
+                <!-- Zellen mit Inhalt befüllen -->
+                 <td>Ungarn</td>
+                 <td>Schweiz</td>
+                 <td>15.05.24 15:00</td>
+                 <td>- : -</td>
+             </tr>
+             <tr>
+                <td>Spanien</td>
+                 <td>Kroatien</td>
+                 <td>15.05.24 18:00</td>
+                 <td>- : -</td>
+             </tr>   
+             <tr>
+                <td>Italien</td>
+                 <td>Albanien</td>
+                 <td>15.05.24 21:00</td>
+                 <td>- : -</td>
+             </tr>   
+         </table>
+
+
+
+         <h3>Eine einfache Tabelle mit einfachen Stylesheets </h3>
+         <!-- Hintergründe ausfüllen, Rahmen setzen, Größenangaben -->
+         <table>
+            <!-- Drei Zeilen erstellen -->
+             <!-- erste Dimension -->
+             <tr>
+                <!-- Spalten definieren -->
+                <!-- zweite Dimension -->
+                <!-- Erster EM Spieltag: 
+                 Land 1, Land 2, Datum/Uhrzeit, Ergebnis -->
+                 <!-- 4 Spalten -->
+                 <!-- th, weil ERSTE Zeile -->
+                <th class="country" style="width:100px">Heim </th>
+                <th class="country" style="width:100px">Gast </th>
+                <th class="other" style="width:150px">Datum/Uhrzeit </th>
+                <th class="other" style="width:150px">Ergebnis </th>
+             </tr>
+             <tr>
+                <!-- Zellen mit Inhalt befüllen -->
+                 <td>Ungarn</td>
+                 <td>Schweiz</td>
+                 <td>15.05.24 15:00</td>
+                 <td>- : -</td>
+             </tr>
+             <tr>
+                <td>Spanien</td>
+                 <td>Kroatien</td>
+                 <td>15.05.24 18:00</td>
+                 <td>- : -</td>
+             </tr>   
+             <tr>
+                <td>Italien</td>
+                 <td>Albanien</td>
+                 <td>15.05.24 21:00</td>
+                 <td>- : -</td>
+             </tr>   
+         </table>
+
+         <h3>Tabelle, wo Spalten-Zellen verbunden werden </h3>
+         <table>
+            <!-- Drei Zeilen erstellen -->
+             <!-- erste Dimension -->
+             <tr>
+                <!-- mit dem colspan-Attribut können mehrere Spalten verbunden werden -->
+                 <!-- Hier: 2 Spalten -->
+                <th colspan= "2" class="country">Spiel </th>
+                <!--<th class="country">Gast </th>-->
+                <th class="other">Datum/Uhrzeit </th>
+                <th class="other">Ergebnis </th>
+             </tr>
+             <tr>
+                <!-- Zellen mit Inhalt befüllen -->
+                 <td>Ungarn</td>
+                 <td>Schweiz</td>
+                 <td>15.05.24 15:00</td>
+                 <td>- : -</td>
+             </tr>
+             <tr>
+                <td>Spanien</td>
+                 <td>Kroatien</td>
+                 <td>15.05.24 18:00</td>
+                 <td>- : -</td>
+             </tr>   
+             <tr>
+                <td>Italien</td>
+                 <td>Albanien</td>
+                 <td>15.05.24 21:00</td>
+                 <td>- : -</td>
+             </tr>   
+             <tr>
+                <td>Niederlande</td>
+                 <td>Deutschland</td>
+                 <!-- bei den Spalten muss es immer 4 ergeben -->
+                 <td colspan="2">wegen schwerer Ausschreitungen abgesagt</td>
+                 <!--<td>- : -</td>-->
+             </tr>   
+         </table>
+
+
+         <h3>Tabelle, wo Zeilen-Zellen verbunden werden </h3>
+         <table>
+            <!-- Drei Zeilen erstellen -->
+             <!-- erste Dimension -->
+             <tr>
+                <!-- mit dem colspan-Attribut können mehrere Spalten verbunden werden -->
+                 <!-- Hier: 2 Spalten -->
+                <th class="country">Spielkategorie </th>
+                <!--<th class="country">Gast </th>-->
+                <th class="other">Platzkategorie </th>
+                <th class="other">Gruppe </th>
+                <th class="other">Preis </th>
+             </tr>
+             <tr>
+                 <td rowspan="4">Vorrunde</td>
+                 <td>E</td>
+                 <!-- mit rowspan Zellen über mehrere Zeilen verbinden -->
+                 <!-- wir beginnen immer bei der obersten Zeile -->
+                 <td rowspan="4">Kind</td>
+                 <td>54 &euro;</td>
+             </tr>
+             <tr>
+                <!--<td>Vorrunde </td>-->
+                 <td>F </td>
+                 <!--<td>Kind</td>-->
+                 <td>58 &euro;</td>
+             </tr>
+             <tr>
+                <!--<td>Vorrunde </td>-->
+                 <td>G </td>
+                 <!--<td>Kind</td>-->
+                 <td>64 &euro;</td>
+             </tr>   
+             <tr>
+                <!--<td>Vorrunde </td>-->
+                 <td>H </td>
+                 <!--<td>Kind</td>-->
+                 <td>77 &euro;</td>
+             </tr>
+             <tr>
+                <td rowspan="4">Viertelfinale</td>
+                <td>E</td>
+                <!-- mit rowspan Zellen über mehrere Zeilen verbinden -->
+                <!-- wir beginnen immer bei der obersten Zeile -->
+                <td rowspan="4">Kind</td>
+                <td>70 &euro;</td>
+            </tr>
+            <tr>
+               <!--<td>Vorrunde </td>-->
+                <td>F </td>
+                <!--<td>Kind</td>-->
+                <td>75 &euro;</td>
+            </tr>
+            <tr>
+               <!--<td>Vorrunde </td>-->
+                <td>G </td>
+                <!--<td>Kind</td>-->
+                <td>80 &euro;</td>
+            </tr>   
+            <tr>
+               <!--<td>Vorrunde </td>-->
+                <td>H </td>
+                <!--<td>Kind</td>-->
+                <td>85 &euro;</td>
+            </tr>
+         </table>
+
+        <h3>Tabelle mit Strukturelementen</h3>
+         <table>
+            <!-- Drei Zeilen erstellen -->
+             <!-- erste Dimension -->
+              <thead>
+                <tr>
+                    <th class="country">Spielkategorie </th>
+                    <!--<th class="country">Gast </th>-->
+                    <th class="other">Platzkategorie </th>
+                    <th class="other">Gruppe </th>
+                    <th class="other">Preis </th>
+                 </tr>
+              </thead>
+              <tfoot>
+                <td colspan="4">Politiker und Schiedsrichter bekommen freien Eintritt. </td>
+              </tfoot>
+              <tbody>
+                <tr>
+                    <td rowspan="4">Vorrunde</td>
+                    <td>E</td>
+                    <!-- mit rowspan Zellen über mehrere Zeilen verbinden -->
+                    <!-- wir beginnen immer bei der obersten Zeile -->
+                    <td rowspan="4">Kind</td>
+                    <td>54 &euro;</td>
+                </tr>
+                <tr>
+                    <!--<td>Vorrunde </td>-->
+                    <td>F </td>
+                    <!--<td>Kind</td>-->
+                    <td>58 &euro;</td>
+                </tr>
+                <tr>
+                    <!--<td>Vorrunde </td>-->
+                    <td>G </td>
+                    <!--<td>Kind</td>-->
+                    <td>64 &euro;</td>
+                </tr>   
+                <tr>
+                    <!--<td>Vorrunde </td>-->
+                    <td>H </td>
+                    <!--<td>Kind</td>-->
+                    <td>77 &euro;</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">Viertelfinale</td>
+                    <td>E</td>
+                    <!-- mit rowspan Zellen über mehrere Zeilen verbinden -->
+                    <!-- wir beginnen immer bei der obersten Zeile -->
+                    <td rowspan="4">Kind</td>
+                    <td>70 &euro;</td>
+                </tr>
+                <tr>
+                <!--<td>Vorrunde </td>-->
+                    <td>F </td>
+                    <!--<td>Kind</td>-->
+                    <td>75 &euro;</td>
+                </tr>
+                <tr>
+                <!--<td>Vorrunde </td>-->
+                    <td>G </td>
+                    <!--<td>Kind</td>-->
+                    <td>80 &euro;</td>
+                </tr>   
+                <tr>
+                <!--<td>Vorrunde </td>-->
+                    <td>H </td>
+                    <!--<td>Kind</td>-->
+                    <td>85 &euro;</td>
+                </tr>
+            </tbody>
+         </table>
+
+         <h3>Tabelle mit Colgroups</h3>
+         <table id="Ticketpreise">
+            <caption>
+                Eintrittspreise 2024
+                <details>
+                Die Ticketpreise sind nach Kategorie und Gruppe aufgeteilt.
+                <nav>
+                    <a href="#oben">Wieder nach oben</a>
+                </nav>
+               </details>
+            </caption>
+            <!-- Mit colgroup bzw. col können Eigenschaften für die gesamte
+             Spalte festgelegt werden. Das erspart die Attributierung
+             der einzelnen td bzw. th Tags. -->
+             <!-- die colgroups stehen direkt unter dem table tag-->
+              <colgroup>
+                <!--<col class="normal">
+                <col class="normal">
+                <col class="normal">-->
+                <!-- mit span können wir die Tabelle so formatieren, 
+                 dass mehrere Spalten einheitlich sind, ohne Angabe des Stylings
+                 in jeder Zeile -->
+                <col span="3" class="normal">
+                <col class="price">
+             </colgroup>
+              <thead>
+                <tr>
+                    <th class="country">Spielkategorie </th>
+                    <!--<th class="country">Gast </th>-->
+                    <th class="other">Platzkategorie </th>
+                    <th class="other">Gruppe </th>
+                    <th class="other">Preis </th>
+                 </tr>
+              </thead>
+              <!-- tfoot, tbody und thead übernehmen spezifische Styles und 
+               überschreiben somit colgroup -->
+              <tfoot class="footer">
+                <!--<tfoot class="footer" style="background-color: lightgray;">-->
+                <tr>
+                    <td colspan="4">Politiker und Schiedsrichter bekommen freien Eintritt. </td>
+                </tr>
+            </tfoot>
+              <tbody>
+
+                <tr>
+                    <td rowspan="4">Vorrunde</td>
+                    <td>E</td>
+                    <!-- mit rowspan Zellen über mehrere Zeilen verbinden -->
+                    <!-- wir beginnen immer bei der obersten Zeile -->
+                    <td rowspan="4" style="background-color: aqua;">Kind</td>
+                    <td style="background-color: goldenrod;">54 &euro;</td>
+                </tr>
+                <tr>
+                    <!--<td>Vorrunde </td>-->
+                    <td>F </td>
+                    <!--<td>Kind</td>-->
+                    <td style="background-color: goldenrod;">58 &euro;</td>
+                </tr>
+                <tr>
+                    <!--<td>Vorrunde </td>-->
+                    <td>G </td>
+                    <!--<td>Kind</td>-->
+                    <td style="background-color: goldenrod;">64 &euro;</td>
+                </tr>   
+                <tr>
+                    <!--<td>Vorrunde </td>-->
+                    <td>H </td>
+                    <!--<td>Kind</td>-->
+                    <td>77 &euro;</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">Viertelfinale</td>
+                    <td>E</td>
+                    <!-- mit rowspan Zellen über mehrere Zeilen verbinden -->
+                    <!-- wir beginnen immer bei der obersten Zeile -->
+                    <td rowspan="4">Kind</td>
+                    <td>70 &euro;</td>
+                </tr>
+                <tr>
+                <!--<td>Vorrunde </td>-->
+                    <td>F </td>
+                    <!--<td>Kind</td>-->
+                    <td>75 &euro;</td>
+                </tr>
+                <tr>
+                <!--<td>Vorrunde </td>-->
+                    <td>G </td>
+                    <!--<td>Kind</td>-->
+                    <td>80 &euro;</td>
+                </tr>   
+                <tr>
+                <!--<td>Vorrunde </td>-->
+                    <td>H </td>
+                    <!--<td>Kind</td>-->
+                    <td>85 &euro;</td>
+                </tr>
+            </tbody>
+         </table>
+         <figcaption>Tabelle: Eintrittspreise bei der EM.</figcaption>
+    </body>
+</html>
+
+

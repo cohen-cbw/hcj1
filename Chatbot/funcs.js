@@ -7,7 +7,8 @@ function senden() {
     text_blase.classList.add("text_blase");
     document.getElementById("chat_inhalt").append(text_blase);
     document.getElementById("eingabe_feld").value = "";
+}
 
-
-    
+function antwort(){
+    console.log("Leider kann ich dir noch nicht antworten...");
 }
