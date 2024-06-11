@@ -1,0 +1,36 @@
+li {
+    list-style: none;
+    font-family: Verdana;
+    color: rgb(120, 120, 231);
+    margin: 0px;
+    padding: 0px;
+  }
+ul{
+    list-style-type: none;
+    margin: 5px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #13347c;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(120, 120, 231);
+}
+@keyframes blinken {
+    0% {
+      text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+    }
+    100% {
+      text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+    }
+  }
+  
+  a:hover {
+    animation: blinken 1s infinite alternate ease-in-out;
+  }
+  
+a:hover{
+    animation-name: blinken;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}

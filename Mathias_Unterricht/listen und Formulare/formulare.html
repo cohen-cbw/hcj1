@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulare</title>
+    <link rel="stylesheet" href="..\listen und Formulare\formstyle.css">
+</head>
+<body>
+    <header>
+        <a href="https://www.youtube.com/">Formulare in HTML</a>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h3>Einfaches Textfeld</h3>                  
+                <p>Es gibt eine Vielzahl unterschiedlicher Formularelemente.</p> 
+                <form action="">
+                    Vorname: <input type="text" name="vorname" size="35" maxlength="30">
+                </form>
+            </article>
+            <article>
+                <h3>Einfacher Button</h3>
+                <form action="Button"><button class="btn">Klick mich!!</button></form>
+            </article>
+            <article>
+                <h3>Einfaches Passwort-Feld</h3>
+                <form action=""><label for="password">Passwort</label>
+                    <input type="password" name="passwort" size="20" maxlength="12" placeholder="Passwort" id="password">
+                </form>
+            </article>
+            <article>
+                <h3>Dropdown</h3>
+                <label for="pi">Ihre wünsche</label>
+                <select name="pizza" id="pi">
+                    <option value="Salami">Salami</option>
+                    <option value="Thunfisch">Thunfisch</option>
+                    <option value="Vier Käse">Vier Käse</option>
+                    <option value="Vegetarisch">Vegetarisch</option>
+                </select>
+            </article>
+            <article>
+                <h3>Mehrzeiliges Eingabefeld</h3>
+                <form action="">
+                    <label for="textarea">Hi. Wie kann ich helfen.</label>
+                    <textarea name="feedback" rows="20" cols="50" placeholder="Bitte geben sie ihr Feedback" id="textarea"></textarea>
+                </form>
+            </article>
+            <article>
+                <h3>Checkboxen</h3>
+                <form action="">
+                    <label for="checkbox1">Checkbox 1</label>
+                    <input type="checkbox" name="checkbox1" id="checkbox1">
+                    <label for="checkbox2">Checkbox 2</label>
+                    <input type="checkbox" name="checkbox2" id="checkbox2">
+                    <label for="checkbox3">Checkbox 3</label>
+                    <input type="checkbox" name="checkbox3" id="checkbox3">
+                </form>
+            </article>
+            <article>
+                <h3>Auswahl liste</h3>
+                <label for="Auswahl">Bitte wähle</label>
+                <select name="auswahl" id="Auswahl" size="3">
+                    <option value="Margarita">Margarita</option>
+                    <option value="Hawaii">Hawaii</option>
+                    <option value="Vegetarisch">Vegetarisch</option>
+                    <option value="Salami">Salami</option>
+                    <option value="Thunfisch">Thunfisch</option>
+                    <option value="Vier Käse">Vier Käse</option>
+                    <option value="Sucuk">Vegetarisch</option>
+                </select>
+            </article>
+        </section>
+    </main>
+    <footer>
+        &copy; 22024, FAG HAM FRA41 <br> Impressum
+    </footer>
+</body>
+</html>
