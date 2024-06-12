@@ -101,9 +101,6 @@ box-shadow: rgb(81, 232, 152) 5px 5px 25px 5px;
 border-radius: 28px;
 transition : 330ms;
 transform: translateY(0);
-display: flex;
-flex-direction: row;
-align-items: center;
 cursor: pointer;
 }
 
