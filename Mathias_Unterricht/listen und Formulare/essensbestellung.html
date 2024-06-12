@@ -279,9 +279,146 @@
                 </div>
                 </div>
             </article>
-            
         </section>
-    <button class="btn">Bestellen</button>    
+        <article>
+            <button class="btn">Bestellen</button>  
+        </article>
+        <section>
+            <article>
+                <h3>Checkboxen in Tabellen</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th><label for="ohnekaese">Käse: </label></th>
+                            <th><label for="wenigkaese">Wenig Käse: </label></th>
+                            <th><label for="normal">Normal: </label></th>
+                            <th><label for="vielkaese">Viel Käse: </label></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="radio" id="ohnekaese" name="kaese" value="ohnekaese">Ohne Käse<br></td>
+                            <td><input type="radio" id="wenigkaese" name="kaese" value="wenigkaese">Wenig Käse<br></td>
+                            <td><input type="radio" name="kaese" id="normal" value="normal">Normal<br></td>
+                            <td><input type="radio" name="kaese" id="vielkaese" value="vielkaese">Viel Käse<br></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="2ohnekaese">Käse: </label>
+                        </td>
+                        <td>
+                            <input type="radio" id="2ohnekaese" name="kaese" value="2ohnekaese">Ohne Käse<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="2wenigkaese">Wenig Käse: </label>
+                        </td>
+                        <td>
+                            <input type="radio" id="2wenigkaese" name="kaese" value="2wenigkaese">Wenig Käse<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="2normal">Normal: </label>
+                        </td>
+                        <td>
+                            <input type="radio" name="kaese" "
+                        id="2normal" value="2normal">Normal<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="2vielkaese">Viel Käse: </label>
+                        </td>
+                        <td>
+                            <input type="radio" name="kaese" id="2vielkaese" value="2vielkaese">Viel Käse<br>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+            <article>
+            <h3>Weitere Eingabefelder</h3>
+            <div id="meine-eingabefelder">
+                <div id="farbe-container">
+                    <label for="farbe">Farbe</label>
+                    <input type="color" id="Farbe" value="#000" name="farbe">
+                </div>
+                <div id="datum-container">
+                    <label for="datum">Datum</label>
+                    <input type="date" name="startdatum" value="2024-06-12" id="datum">
+                </div>
+                <div id="zeit-container">
+                    <label for="zeit">Zeit</label>
+                    <input type="time" name="startzeit" value="19:00" id="zeit">
+                </div>
+                <div id="monat-container">
+                    <label for="monat">Monat</label>
+                    <input type="month" name="startmonat" value="06" id="monat">
+                </div>
+                <div id="datumzeit-container">
+                    <label for="datumzeit">Datum und Zeit</label>
+                    <input type="datetime-local" name="startdatumzeit" value="2024-06-12T19:00" id="datumzeit">
+                </div>
+                <div id="bereichs-container">
+                    <label for="bereich">Bereich</label>
+                    <input type="range" name="bereich" value="50" min="0" max="100" id="bereich">
+                </div>
+            </div>        
+            </article>
+            <article>
+                <h3>Submit-Button</h3>
+                <div class="container6">
+                    <form action="">
+                        <label for="vn">Vorname</label>
+                        <input type="text" id="vn" name="vorname" size="35" maxlength="35" placeholder="Name Eingeben" required>
+                    </form>
+                    <form>
+                        <input type="submit" value="Abschicken">
+                    </form>
+                </div>
+            </article>
+            <article>
+                <h3>Bestellformular</h3>
+                <div class="container7">
+                    <div style="display: flex; flex-direction: row; gap: 10px;">
+                        <div>
+                            <label for="vn">Vorname</label>
+                            <input type="text" name="vorname" id="vn2" required>
+                        </div>
+                        <div>
+                            <label for="nn">Nachname</label>
+                            <input type="text" name="nachname" id="nn2" required>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 10px;">
+                        <div>
+                            <label for="str">Adresse</label>
+                            <input type="text" name="strasse" id="str2" required style="background-color: aqua;">
+                        </div>
+                        <div>
+                            <label for="plz">PLZ</label>
+                            <input type="number" name="plz" id="plz2" size="20px" maxlength="5" required style="background-color: aqua;">                      
+                        </div>
+                        <div>
+                            <label for="">E-Mail</label>
+                            <input type="email" name="email" id="email2" required>
+                        </div>
+                        <div>
+                            <label for="">Telefon (Optional)</label>
+                            <input type="tel" name="telefon" id="telefon2">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="wuensche">Wünsche (Optional)</label>
+                        <textarea name="wuensche" id="wuensche" rows="7" cols="50" style="background-color: rgba(58, 219, 93, 0.671);"></textarea>
+                    </div>
+                </div>
+            </article>
+        </section>
     </main>
     <footer>
         <div class="container">
