@@ -12,13 +12,6 @@
             "request": "launch",
             "name": "Open essensbestellung.html",
             "file": "c:\\xampp\\htdocs\\hcj1\\Mathias_Unterricht\\listen und Formulare\\essensbestellung.html"
-        },
-
-        {
-            "type": "chrome",
-            "request": "launch",
-            "name": "Open index.html",
-            "file": "C:\\xampp\\htdocs\\hcj1\\Chatbot\\index.html"
         }
     ]
 }
