@@ -1,0 +1,12 @@
+{
+    "vorname": "Max",
+    "nachname": "Mustermann",
+    "alter": 44,
+    "geburtsdatum": "1980-01-01",
+    "adresse": 
+        { "Straße": "Musterstraße",
+            "Nummer": 132,
+            "PLZ": 12345,
+            "Ort": "Musterstadt"
+        }
+}
