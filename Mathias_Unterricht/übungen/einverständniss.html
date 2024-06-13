@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einverständnis</title>
+    <link rel="stylesheet" href="..\übungen\einver.css">
+</head>
+<body>
+    <div>
+        <div class="eins">
+            <div>Ich,</div><div style="display: flex; flex-direction: column;">
+                <input type="text" id="vornach" name="vornach">
+                <label for="vornach">(Vorname und Familienname)</label>
+            </div>
+        </div>
+        <div>
+            erkläre mein Einverständnis zur
+        </div>
+        <div>
+            <ul>
+                <li><input type="checkbox" id="Kinderreisepass" name="Kinderreisepass">Ausstellung, Verlängerung und Aktualisierung eines Kinderreisepasses</li>
+                <li><input type="checkbox" id="Reisepass" name="Reisepass">Ausstellung, Verlängerung und Aktualisierung eines Kinderreisepasses</li>
+                <div class="block">
+                    <li><input type="checkbox" id="Personalausweises" name="Personalausweises">Ausstellung eines Personalausweises bzw. vorläufigen Personalausweises;</li>
+                    <label for="Personalausweises">(nicht erforderlich nach Vollendung des 16.Lebensjahres des Kindes)</label>
+                </div>
+            </ul>
+        </div>
+        <div>
+            für mein Kind<br>
+        </div>
+        <div class="block">
+            <input type="text" id="kind" name="kind">
+            <label for="kind">(Vornamen, Familienname, Geburtsdatum des Kindes)</label>
+        </div>
+        <div>
+            <ul>
+                <li><input type="checkbox" id="16.Lebensjahres" name="16.Lebensjahres">Ich stimme der Aushändigung des Personalausweises an mein Kind vor dem 16.Geburtstag zu.</li>
+                <li><input type="checkbox" id="18.Lebensjahres" name="18.Lebensjahres">Ich stimme der Aushändigung des Personalausweises an mein Kind vor dem 18.Geburtstag zu.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

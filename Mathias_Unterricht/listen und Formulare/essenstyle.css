@@ -156,3 +156,12 @@ footer{
     gap: 5px;
     padding: 5px;
 }
+input[type="email"]:valid+label::after{
+    color: #0bed3c;
+    content: "✓";
+}
+
+input[type="email"]:invalid+label::after{
+    color: #ed1704;
+    content: "✕";
+}

@@ -5,13 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         
-        
-        
         {
             "type": "chrome",
             "request": "launch",
             "name": "Open essensbestellung.html",
             "file": "c:\\xampp\\htdocs\\hcj1\\Mathias_Unterricht\\listen und Formulare\\essensbestellung.html"
-        }
+        },
+            {
+                "name": "einverständniss",
+                "request": "launch",
+                "type": "chrome",
+                "file": "C:\\xampp\\htdocs\\hcj1\\Mathias_Unterricht\\übungen\\einverständniss.html"
+            }
     ]
 }
