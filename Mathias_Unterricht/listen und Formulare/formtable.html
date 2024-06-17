@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <!-- leerer Header-->
+        <meta charset="UTF-8"> 
+    </head>
+    <body>
+
+        <ol>
+            <li>JavaScript erstellt interaktive Elemente ...</li>
+        </ol>
+        <style>
+            table tr td{
+                border: 1px solid black;
+                padding: 10px;
+                margin: 10px;
+            }
+        </style>
+        <form>
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <label for="name">Name
+                        </label><br>
+                        <input type="text" id="name" required>
+                    </td>
+                    <td colspan="2"><label for="geb">Vorname
+                        </label><br>
+                        <input type="text" id="vn" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label for="geb">fr&uuml;herer Name
+                    </label><br>
+                        <input type="text" id="geb">
+                    </td>
+                    <td>
+                        <label for="geb">Geburtsdatum
+                        </label><br>
+                    <input type="date" id="geb"></td>
+                    <td><label for="geschlecht">Geschlecht
+                    </label><br>
+                    <input type="text" id="geschlecht"></td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <label for="anschrift">bekannte Anschrift
+                        </label><br>
+                        <input type="text" id="anschrift">      
+                </tr>
+
+            </table>
+
+            <input type="submit" value="Absenden">
+            <input type="reset" value="Zurücksetzen">
+
+        </form>
+    </body>
+</html>
