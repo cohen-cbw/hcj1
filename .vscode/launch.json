@@ -4,6 +4,7 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
         
         {
             "type": "chrome",
@@ -18,10 +19,10 @@
                 "file": "C:\\xampp\\htdocs\\hcj1\\Mathias_Unterricht\\übungen\\einverständniss.html"
             },
             {
-                "name":"unites",
+                "name":"Quiz",
                 "request": "launch",
                 "type": "chrome",
-                "file": "C:\\xampp\\htdocs\\hcj1\\Mathias_Unterricht\\units\\units.html"
+                "file": "C:\\xampp\\htdocs\\hcj1\\Quiz\\outline.html"
             }
     ]
 }
