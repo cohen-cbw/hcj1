@@ -1,8 +1,19 @@
-article{
-    font-size: 32px;
-    width: 50%;
-    border
+article {
+    width: 80vw;
+    border: 1px solid black;
+    font-size: 25px;
 }
-p{
-    font-size: 0.8em;
+.div1{
+    width: 40em;
+    max-width: 0.5em;
+    border: 1px solid red;
+}
+.div2{
+    transform: rotate(180deg);
+    border: solid 1px #1221f3;
+}
+.div3{
+    transform: rotate(90deg);
+    border: #fc01e7 solid 1px;
+    max-width: 50ch;
 }
