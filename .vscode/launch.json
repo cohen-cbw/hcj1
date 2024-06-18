@@ -16,6 +16,12 @@
                 "request": "launch",
                 "type": "chrome",
                 "file": "C:\\xampp\\htdocs\\hcj1\\Mathias_Unterricht\\übungen\\einverständniss.html"
+            },
+            {
+                "name":"unites",
+                "request": "launch",
+                "type": "chrome",
+                "file": "C:\\xampp\\htdocs\\hcj1\\Mathias_Unterricht\\units\\units.html"
             }
     ]
 }
