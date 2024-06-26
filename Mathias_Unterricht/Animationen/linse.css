@@ -1,0 +1,13 @@
+div{
+    border: solid 2px #00ff0d;
+}
+body{
+    border: solid 2px #ff0000;
+}
+p{
+    border: solid 2px #bbff00;
+}
+section{
+    border: solid 3px #000000;
+    margin-bottom: 15px;
+}
