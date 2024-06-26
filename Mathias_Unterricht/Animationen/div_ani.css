@@ -17,6 +17,20 @@
     50% {transform: rotateZ(360deg) rotateX(360deg) translateY(-1000px); background-color: rgb(252, 161, 24);}
     100% {transform: rotateZ(0deg) rotateX(0deg) translateY(0%); background-color: #00ff37;}
 }
+@keyframes klappen {
+    0% {transform: matrix3d(0%) translateX(4em); background-color: #5b5292;}
+    /*X-ROTATE : 90°, X-DEPTH : 0.008, transform-origin: center top 0px*/
+    50% {transform:matrix3d(1,0,0.00,0,0.00,0,1.00,0.008,0,-1,0,0,0,0,0,1) translateX(15em);}
+    100% {transform: matrix3d(0%) translateX(4em); background-color: aquamarine;}
+}
+
+@keyframes schwingen{
+    0% {transform: rotateX(0); transform-origin: top; background-color: #b1b6ff;}
+    10% {transform: rotateX(180deg); transform-origin: top; background-color: aquamarine;}
+    20%{transform: translateZ(160px);}
+    25%{transform: translateZ(0%);}
+    30%{transform: rotateY(-180deg); transform-origin: right;}
+}
 
 div{
     width: 40%;
@@ -60,6 +74,19 @@ div p{
     background-color: #00ff37;
     animation: threeD 10s linear 5;
 }
+
 .div5{
-    transform: matrix3d();
+    transform-origin: center top 0px; 
+    transition: all 0.5s ease 0s;
+    animation: klappen 5s linear 0s infinite;
+}
+
+.div6{
+    position: relative;
+    left: 500px;
+    margin-bottom: 15px;
+    animation: schwingen 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+body{
+    background-color: #ffdb0d;
 }

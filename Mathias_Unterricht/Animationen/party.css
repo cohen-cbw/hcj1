@@ -1,0 +1,91 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+div{
+    width: 15em;
+    height: 15em;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+@keyframes welle {
+    0%{background: linear-gradient(violet, red,black);}
+    25%{background: linear-gradient(blue, violet, red);}
+    50%{background: linear-gradient(black, blue, violet);}
+    75%{background: linear-gradient(red, black, blue);}
+    100%{background: linear-gradient(violet, red,black);}
+}
+
+@keyframes moveright{0%{transform: translateX(-75px);}50%{transform: translateX(1530px);}100%{transform: translateX(-75px);}}
+
+@keyframes spin{
+    0%{transform: rotate(0deg); background-color: #ffffff;}
+    50%{transform: rotate(360deg); background-color: #0011ff;}
+    100%{transform: rotate(0deg); background-color: #ffffff;}
+}
+@keyframes grow{0%{transform: scale(1);}50%{transform: scale(2);}100%{transform: scale(1);}}
+
+@keyframes threeD{
+    0% {transform: rotateZ(0deg) rotateX(0deg) translateY(0%); background-color: #00ff37;}
+    50% {transform: rotateZ(360deg) rotateX(360deg) translateY(-1000px); background-color: rgb(252, 161, 24);}
+    100% {transform: rotateZ(0deg) rotateX(0deg) translateY(0%); background-color: #00ff37;}
+}
+
+@keyframes klappen {
+    0% {transform: matrix3d(0%); background-color: #5b5292;}
+    /*X-ROTATE : 90°, X-DEPTH : 0.008, transform-origin: center top 0px*/
+    50% {transform:matrix3d(1,0,0.00,0,0.00,0,1.00,0.008,0,-1,0,0,0,0,0,1);}
+    100% {transform: matrix3d(0%); background-color: aquamarine;}
+}
+@keyframes upnDown {0%{transform: translateY(-75px);}50%{transform: translateY(700px);}100%{transform: translateY(-75px);}}
+
+.div1{
+    background-color: #0011ff;
+    animation-name: moveright;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-radius: 50%;
+}
+.div2{
+    background-color: #00ff37;
+    animation-name: upnDown;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.div3{
+    background-color: #5b5292;
+    animation-name: klappen;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.div10{
+    background-color: aqua;
+    animation-name: threeD;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.div11{
+    position: relative;
+    top: 20em;
+    right: 20em;
+    animation: spin 0.5s infinite linear;
+}
+
+.div12{
+    background-color: rgb(255, 145, 0);
+    animation: grow 0.3s infinite linear
+}
+
+.div6{
+    animation: welle 5s infinite linear;
+}

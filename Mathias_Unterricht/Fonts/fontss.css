@@ -1,0 +1,17 @@
+html{
+    font-size: 10vw;
+    font-family: Playwrite;
+}
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+ES+Deco:wght@100..400&display=swap');
+
+body {
+    font-family: 'Jan', 'consolas', sans-serif;
+}
+
+.article{
+    font-size: 0.5em;
+}
+
+.article p{
+    font-size: 0.5em;
+}
