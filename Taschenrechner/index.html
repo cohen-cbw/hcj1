@@ -3,31 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\Taschenrechner\style\calculator.css">
+    <link rel="icon" href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5552cb82-6fb8-4c7f-9d29-a10b2e5daf6c/dcz4xv8-12ac5c72-b106-4a86-bede-96e4e9b912c7.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzU1NTJjYjgyLTZmYjgtNGM3Zi05ZDI5LWExMGIyZTVkYWY2Y1wvZGN6NHh2OC0xMmFjNWM3Mi1iMTA2LTRhODYtYmVkZS05NmU0ZTliOTEyYzcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.dNCnywJVtwxHHJQZb9KNlrSuY3sw8jtwi35s2ir7aQc">
     <title>Rechner</title>
 </head>
-<body>
-    <header>
-        <h1>Calcutaor 0.1</h1>
-    </header>
+<body>        
     <main>
-        <input type="text">
-        <table>
-                <tr>
-                    <td><input type="button" id="b1" name="b1" value="1"></td>
-                    <td><input type="button" id="b2" name="b2" value="2"></td>
-                    <td><input type="button" id="b3" name="b3" value="3"></td>
-                    <td><input type="button" id="o+" name="o+" value="+"></td>
-                </tr>
-                <tr>
-                    <td><input type="button" id="b4" name="b4" value="4"></td>
-                    <td><input type="button" id="b5" name="b5" value="5"></td>
-                    <td><input type="button" id="b6" name="b6" value="6"></td>
-                    <td><input type="button" id="o-" name="o-" value="-"></td>
-                </tr>
-                <tr>
-                    <td><input type="button" id="b7" name="b7" value="7"></td>
-                    <td><input type="button" id="b8" name="b8" value="8"></td>
-                    <td><input type="button" id="b9" name="b9" value="9"></td>
+        <div class="rechner-body">
+            <div class="header-div">
+                <h1>Calculator 0.1</h1>
+                <input type="text" class="eingabe-feld">
+            </div>
+        <table style="border: solid green 1px;">
+                <tr>
+                    <td><input type="button" id="b1" name="b1" value="1"></td>
+                    <td><input type="button" id="b2" name="b2" value="2"></td>
+                    <td><input type="button" id="b3" name="b3" value="3"></td>
+                    <td><input type="button" id="o+" name="o+" value="+"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="b4" name="b4" value="4"></td>
+                    <td><input type="button" id="b5" name="b5" value="5"></td>
+                    <td><input type="button" id="b6" name="b6" value="6"></td>
+                    <td><input type="button" id="o-" name="o-" value="-"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="b7" name="b7" value="7"></td>
+                    <td><input type="button" id="b8" name="b8" value="8"></td>
+                    <td><input type="button" id="b9" name="b9" value="9"></td>
                     <td><input type="button" id="o*" name="o*" value="*"></td>
                 </tr>
                 <tr> 
@@ -35,11 +38,12 @@
                     <td><input type="button" id="b0" name="b0" value="0"></td>
                     <td><input type="button" id="o=" name="o=" value="="></td>
                     <td><input type="button" id="o/" name="o/" value="/"></td>
-                </tr>
+                </tr>
         </table>
+        </div>
     </main>
     <footer>
-        <div class="container">
+        <div class="container-footer">
             <p>&copy; 2024 Max Mustermann</p>
             <address>
                 Musterstraße 1<br>
@@ -50,4 +54,5 @@
         </div>
     </footer>
 </body>
+<script src="..\Taschenrechner\script\calc.js"></script>
 </html>
