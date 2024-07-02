@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.outer-box{
+    width: 300px;
+    height: 300px;
+    overflow-y: auto;
+    margin : 50px;
+}
+.inner-box{
+    width: 200px;
+    height: 200px;
+}
+
+.new-box{
+    width: 200px;
+    height: 200px;
+}
