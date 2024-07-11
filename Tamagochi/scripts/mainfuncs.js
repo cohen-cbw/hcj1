@@ -22,34 +22,39 @@ class Gefuehle {
             this.schelmich = false;
             this.gluecklich = false;
             this.zufrieden = false;
+            console.log("wuetend")
         }
-        if(Stats.happiness <= 45 || Stats.hunger < 20 ||  Stats.water < 20 || Stats.lp > 20){
+        if(stats.happiness <= 45 || stats.hunger < 20 ||  stats.water < 20 || stats.lp > 20){
             this.wuetend = false;
             this.traurig = true;
             this.schelmich = false;
             this.gluecklich = false;
             this.zufrieden = false;
+            console.log("traurig")
         }
-        if(Stats.happiness >= 60 && Stats.poop >= 70 && Stats.water >= 60 && Stats.hunger >= 60 && Stats.lp >= 50){
+        if(stats.happiness >= 60 && stats.poop >= 70 && stats.water >= 60 && stats.hunger >= 60 && stats.lp >= 50){
             this.wuetend = false;
             this.traurig = false;
             this.schelmich = true;
             this.gluecklich = false;
             this.zufrieden = false;
+            console.log("traurig")
         }
-        if(Stats.happiness >= 80 && Stats.poop >= 50 && Stats.hunger <= 50 && Stats.water <= 50 && Stats.lp > 50 && Stats.energie >50){
+        if(stats.happiness >= 80 && stats.poop >= 50 && stats.hunger <= 50 && stats.water <= 50 && stats.lp > 50 && stats.energie >50){
             this.wuetend = false;
             this.traurig = false;
             this.schelmich = false;
             this.gluecklich = true;
             this.zufrieden = false;
+            console.log("gluecklich")
         }
-        if(Stats.happiness >= 80 && Stats.poop >= 50 && Stats.hunger <= 50 && Stats.water <= 50 && Stats.lp > 50 && Stats.energie <= 50){
+        if(stats.happiness >= 80 && stats.poop >= 50 && stats.hunger <= 50 && stats.water <= 50 && stats.lp > 50 && stats.energie <= 50){
             this.wuetend = false;
             this.traurig = false;
             this.schelmich = false;
             this.gluecklich = false;
             this.zufrieden = true;
+            console.log("zufrieden")
         }
     }
     resetGefuehle(){
@@ -184,7 +189,7 @@ function timerstate(){
         tamagochi.stats.updateStats(); 
         tamagochi.gefuehle.updateGefuehle(tamagochi.stats); 
         tamagochi.gesicht.updateGesicht();
-    } , 10000);
+    } , 5000);
 }
 
 
