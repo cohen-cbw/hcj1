@@ -1,20 +1,26 @@
 div.bar-water{
     background-color: #02f0f8;
+    width: 3%;
 }
 div.bar-hunger{
     background-color: #f10000;
+    width: 3%;
 }
 div.bar-poop{
     background-color: rgb(102, 78, 0);
+    width: 3%;
 }
 div.bar-happiness{
     background-color: #e7ff0f;
+    width: 3%;
 }
 div.bar-lp{
     background-color: rgb(0, 255, 55);
+    width: 3%;
 }
 div.bar-energie{
     background-color: rgb(4, 0, 255);
+    width: 3%;
 }
 
 .bar{
@@ -37,5 +43,4 @@ div.stat-tag {
     flex-direction: row;
     justify-content: space-around;
     margin: 5px auto;
-    
 }

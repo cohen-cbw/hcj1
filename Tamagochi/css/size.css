@@ -14,3 +14,8 @@ h1{
     max-width: 300px;
     max-height: 300px;
 }
+.tamabody{
+    max-width: 540px;
+    max-height: 1080px;
+    margin: 0 auto;
+}
