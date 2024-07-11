@@ -1,0 +1,28 @@
+.bar{
+    border: solid 1px #ef74ff;
+}
+.bar div{
+    border: solid 1px #f70c0c;
+}
+.status-div{
+    border: solid 1px #b0f70a;
+}
+h1{
+    border: blue solid 1px;
+}
+.main-img{
+    border: #ea00ff solid 1px;
+}
+
+.main-img img{
+    border: #ff0000 solid 1px;
+}
+.go{
+    border:#b0f70a solid 1px;
+}
+.play-button{
+    border:#f7260a solid 1px;
+}
+.interactions{
+    border:#7700ff solid 1px;
+}

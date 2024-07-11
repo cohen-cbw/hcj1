@@ -1,0 +1,30 @@
+.status-div{
+    margin: 0 auto;
+    padding: 10px;
+}
+h1{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.main-img{
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-img img{
+    padding: 10px;
+}
+.bar{
+    margin: 0 auto;
+}
+.go{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    align-items: center;
+}

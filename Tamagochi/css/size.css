@@ -1,0 +1,16 @@
+
+.status-div{
+    max-width: 640px;
+    max-height: 1080px;
+}
+
+h1{
+    max-width: 200px;
+}
+.main-img{
+    max-width: 200px; 
+}
+.go{
+    max-width: 300px;
+    max-height: 300px;
+}
