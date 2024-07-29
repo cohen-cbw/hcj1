@@ -104,17 +104,6 @@ class Stats{
     }
 }
 
-class Aktionen{
-    constructor(spielen = false, gassie = false, essen = false, trinken = false, schlafen = false, ergern = false){
-        this.spielen = spielen;
-        this.gassie = gassie;
-        this.essen = essen;
-        this.trinken = trinken;
-        this.schlafen = schlafen;
-        this.ergern = ergern;
-    }
-}
-
 let image = document.getElementById('tamagochi-image');
 
 class Gesicht{
@@ -186,7 +175,7 @@ class Aktionen{
 
 
 
-let tamagochi = new Tamagochi(new Stats(), new Gefuehle(), new Gesicht());
+let tamagochi = new Tamagochi(new Stats(), new Gefuehle(), new Gesicht(), new Aktionen());
 
 
 let startButton = document.querySelector('button.start');
@@ -237,19 +226,7 @@ function timerstate(){
 
 
 let schlaf = document.querySelector("button.schlafen");
-
-schlaf.addEventListener("click", schlafen);
-
-function schlafen(){
-    image.setAttribute("src", "../Tamagochi/res/heart_eyes_cat.png");
-}
+schlaf.addEventListener("click", tamagochi.Aktionen.aktionSchlafen);
 
 
 
-
-var reaction = {
-    herzen : false,
-    kuessen : false,
-    totlachen: false,
-    errschrocken : false,
-}
