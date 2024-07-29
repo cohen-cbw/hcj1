@@ -103,6 +103,7 @@ class Stats{
         this.energie = 50;
     }
 }
+
 class Aktionen{
     constructor(spielen = false, gassie = false, essen = false, trinken = false, schlafen = false, ergern = false){
         this.spielen = spielen;
@@ -142,6 +143,47 @@ class Gesicht{
         }
     }
 }
+
+class Aktionen{
+    constructor(spielen = false, gassie = false, essen = false, trinken = false, schlafen = false, ergern = false){
+        this.spielen = spielen;
+        this.gassie = gassie;
+        this.essen = essen;
+        this.trinken = trinken;
+        this.schlafen = schlafen;
+        this.ergern = ergern;
+    }
+    aktionTrinken(){
+        if(tamagochi.stats.water <= 100){
+            this.trinken = true;
+            tamagochi.stats.water += 5;
+        }
+        this.trinken = false;
+    }
+    aktionEssen(){
+        if(tamagochi.stats.hunger <= 100){
+            this.essen = true;
+            tamagochi.stats.hunger += 10;
+        }
+        this.essen = false;
+    }
+    aktionGassie(){
+        if(tamagochi.stats.poop >= 0){
+            this.gassie = true;
+            tamagochi.stats.poop -= 10;
+        }
+        this.gassie = false;
+    }
+    aktionSchlafen(){
+        this.schlafen = true;
+        if(tamagochi.stats.energie <= 100){           
+            tamagochi.stats.energie = 100;
+        }
+        tamagochi.stats.lp += 50;
+        this.schlafen = false;
+    }
+}
+
 
 
 let tamagochi = new Tamagochi(new Stats(), new Gefuehle(), new Gesicht());
