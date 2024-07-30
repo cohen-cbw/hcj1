@@ -1,8 +1,9 @@
 class Tamagochi{
-    constructor(stats, gefuehle, gesicht){
+    constructor(stats, gefuehle, gesicht, aktionen){
         this.stats = stats;
         this.gefuehle = gefuehle;
         this.gesicht = gesicht;
+        this.aktionen = aktionen;
     }
 }
 
@@ -38,7 +39,7 @@ class Gefuehle {
             this.schelmich = true;
             this.gluecklich = false;
             this.zufrieden = false;
-            console.log("traurig")
+            console.log("schelmich")
         }
         if(stats.happiness >= 80 && stats.poop >= 50 && stats.hunger <= 50 && stats.water <= 50 && stats.lp > 50 && stats.energie >50){
             this.wuetend = false;
@@ -81,7 +82,7 @@ class Stats{
         if(this.hunger <= 35 || this.water <= 35 || this.poop >= 75){
             this.happiness -= 5;
         }
-        if(this.hunger >= 5 || this.water >= 5){
+        if(this.hunger >= 0 || this.water >= 0){
             this.lp -= 5;
         }
         if(this.lp <= 30){
@@ -130,6 +131,9 @@ class Gesicht{
         if(tamagochi.gefuehle.gluecklich){
             image.setAttribute("src", this.gluecklich);
         }
+    }
+    resetGesicht(){
+        image.setAttribute("src", this.zufrieden);
     }
 }
 
@@ -208,6 +212,7 @@ function beenden(){
     val.innerHTML = "";
     tamagochi.stats.resetStats();
     tamagochi.gefuehle.resetGefuehle();
+    tamagochi.gesicht.resetGesicht();
     clearInterval(statechange);
 }
 
@@ -226,7 +231,17 @@ function timerstate(){
 
 
 let schlaf = document.querySelector("button.schlafen");
-schlaf.addEventListener("click", tamagochi.Aktionen.aktionSchlafen);
+schlaf.addEventListener("click", tamagochi.aktionen.aktionSchlafen);
+
+let essen = document.querySelector("button.Essen");
+essen.addEventListener("click", tamagochi.aktionen.aktionEssen);
+
+let gassie = document.querySelector("button.gassie");
+gassie.addEventListener("click", tamagochi.aktionen.aktionGassie);
+
+let trinken = document.querySelector("button.trinken");
+trinken.addEventListener("click", tamagochi.aktionen.aktionTrinken);
+
 
 
 
