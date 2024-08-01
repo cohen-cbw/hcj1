@@ -1,0 +1,18 @@
+.App{
+  border: solid 1px black;
+  padding: 5px;
+}
+.mockbox{
+  width: 600px;
+  height: 150px;
+  margin: 10px auto;
+  border: black solid 1px;
+  display: flex;
+  gap:5px;
+  padding: 5px;
+}
+.mockbox div{
+  border:solid 1px black;
+  flex:1;
+  padding: 4px;
+}

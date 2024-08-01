@@ -1,0 +1,11 @@
+.otable > table{
+    margin: 10px auto;
+    border-collapse: collapse;
+}
+
+
+.otable td{
+    border: solid 1px black;
+    padding: 5px;
+    text-align: center;
+}
