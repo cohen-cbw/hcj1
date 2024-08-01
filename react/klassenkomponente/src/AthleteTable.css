@@ -1,0 +1,26 @@
+/* Styling für die Tabelle */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    text-align: left;
+  }
+  
+  /* Styling für Tabellenzellen */
+  th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Styling für Tabellenüberschriften */
+  th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Styling für Tabellenzeilen beim Hover */
+  tr:hover {
+    background-color: #f9f9f9;
+  }
