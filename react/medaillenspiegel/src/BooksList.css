@@ -13,3 +13,7 @@ tr:nth-child(2n) {
 td {
   padding: 5px 10px;
 }
+ table tbody tr:hover{
+  background-color: #9b9b9b;
+  cursor: pointer;
+}
