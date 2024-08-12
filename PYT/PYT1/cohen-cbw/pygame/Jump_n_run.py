@@ -12,7 +12,7 @@ clock = pygame.time.Clock()
 
 # Hier öffnen wir ein Fenster, das 700 Pixel breit und 600 Pixel hoch ist. 
 # Das ist unsere Spielfläche.
-screen = pygame.display.set_mode((700, 600))
+screen = pygame.display.set_mode((800, 600))
 
 # Wir geben unserem Fenster den Titel "Block lord".
 pygame.display.set_caption('Block lord')
