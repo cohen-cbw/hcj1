@@ -26,9 +26,33 @@ screen.fill((235, 252, 252))
 ground_surface = pygame.Surface((800, 200))
 ground_surface.fill((121, 133, 133))
 
+# Es wird ein Spieler erstellt der mit der klasse pygame.Rect durch einen rechteckigen bereich repräsentiert wird
+player = pygame.Rect((100, 430, 30, 30))
+
+
 
 # Wir starten unser Spiel-Schleife. Hier passiert die ganze Action.
 while True:
+
+    # Wir zeichnen unsere Boden-Oberfläche auf den Bildschirm.
+    # Die Position (0, 400) bedeutet, dass der Boden 400 Pixel vom oberen Rand entfernt beginnt.
+    screen.blit(ground_surface, (0,400))
+
+    # der spieler wird mit draw auf das display gezeichnet
+    pygame.draw.rect(screen, (136, 8, 8), player)
+
+    key = pygame.key.get_pressed()
+    if key[pygame.K_d] == True:
+        player.move_ip(5, 0)
+    elif key[pygame.K_a] == True:
+        player.move_ip(-5, 0)
+
+    if key[pygame.K_SPACE] == True:
+        player.move_ip(0, -10)
+        player.move_ip(0, 10)
+
+    # Wenn der Spieler den linken oder rechten Pfeil drückt, bewegen wir ihn entsprechend.
+
     # Wir prüfen, ob irgendwelche Ereignisse passiert sind 
     # (z.B. Mausklicks, Tastendrücke, Fenster schließen).
     for event in pygame.event.get():
@@ -38,9 +62,8 @@ while True:
             pygame.quit()
             exit()
 
-    # Wir zeichnen unsere Boden-Oberfläche auf den Bildschirm.
-    # Die Position (0, 400) bedeutet, dass der Boden 400 Pixel vom oberen Rand entfernt beginnt.
-    screen.blit(ground_surface, (0,400))
+
+    
 
     # Wir aktualisieren den Bildschirm, damit alle Änderungen sichtbar werden.
     pygame.display.update()
