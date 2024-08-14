@@ -11,10 +11,21 @@ from kivy.uix.scrollview import ScrollView
 from kivy.uix.image import Image
 from kivy.uix.slider import Slider
 from kivy.uix.switch import Switch
+from kivy.core.window import Window
 
 class MyApp(App):
     def build(self):
-        return Label(text="My App")
+        background_image = Image(source='src/2b-nier-automata-uhdpaper.com-4K-4.3229.jpg')
+
+        layout = BoxLayout()
+        layout.add_widget(background_image)
+
+        Window.size = background_image.size(1225, 2160)
+        Window.clearcolor = (0, 0, 0, 0)
+        background_image.pos = (0, 0)
+
+
+        return layout
 
 if __name__ == "__main__":
     MyApp().run()

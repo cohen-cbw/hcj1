@@ -23,7 +23,7 @@ screen.fill((235, 252, 252))
 # Wir erstellen eine neue Oberfläche, die 700 Pixel breit und 200 Pixel hoch ist.
 # Das wird unser Boden.
 # Wir füllen diese Oberfläche mit einer grauen Farbe.
-ground_surface = pygame.Surface((700, 200))
+ground_surface = pygame.Surface((800, 200))
 ground_surface.fill((121, 133, 133))
 
 
