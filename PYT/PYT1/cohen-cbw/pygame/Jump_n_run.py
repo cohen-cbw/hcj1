@@ -41,6 +41,8 @@ gravity = 0.5  # Schwerkraft, zieht den Spieler nach unten
 screen.blit(ground_surface, (0,450))
 
 
+
+
 # Wir starten unser Spiel-Schleife. Hier passiert die ganze Action.
 while True:
 
@@ -72,7 +74,6 @@ while True:
             jump_velocity = -10
 
     
-    d 
 
     # Wir prüfen, ob irgendwelche Ereignisse passiert sind 
     # (z.B. Mausklicks, Tastendrücke, Fenster schließen).
