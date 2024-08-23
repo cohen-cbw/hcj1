@@ -11,7 +11,7 @@ screen_width = 800
 screen_height = 600
 screen = pygame.display.set_mode((screen_width, screen_height))
 
-background_image = pygame.image.load('../pygame/undead_pixel-art/PNG/big_051431ccb4.png')
+background_image = pygame.image.load('./undead_pixel-art/PNG/big_051431ccb4.png')
 screen.blit(background_image, (0, 0))
 
 pygame.display.set_caption('Block lord')

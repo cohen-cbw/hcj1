@@ -17,13 +17,15 @@ class MyApp(App):
     def build(self):
         background_image = Image(source='src/2b-nier-automata-uhdpaper.com-4K-4.3229.jpg')
 
+        Window.size = (388, 684)
+        Window.clearcolor = (0, 0, 0, 0)
+        
+
         layout = BoxLayout()
         layout.add_widget(background_image)
-
-        Window.size = background_image.size(1225, 2160)
-        Window.clearcolor = (0, 0, 0, 0)
         background_image.pos = (0, 0)
 
+        
 
         return layout
 
